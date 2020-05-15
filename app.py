@@ -20,13 +20,15 @@ app = Flask(__name__)
 def home():
     return render_template("home_page.html")
 
-@app.route("/test")
-def test():
-    return render_template("testing.html")
+@app.route("/001")
+def link1():
+    return "Link 1 - In Progress"
 
-@app.route("/1006")
-def homepage():
-    return "1006 Home Page"
+@app.route("/002")
+def link2():
+    return "Link 2 - In Progress"
+
+
 
 #start the server
 if __name__ == "__main__":
