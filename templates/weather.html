@@ -7,5 +7,49 @@
 <body>
 <p style="margin: 0.0px 0.0px 0.0px 0.0px; font-size: 25px"><b>State Weather Stations and Weather Data</b></p>
 <p style="margin: 0.0px 0.0px 0.0px 0.0px; font-size: 12px">Data from NOAA website; https://www.noaa.gov/</p>
+
+<p style="font-size: 16px">Tracking changing weather trends is a necessary component to understanding how human activities
+impact the world in which we live. From temperature
+<br>swings to precipitation change, changes in weather patterns can offer scientists a glance into
+how Earth's climate system adapts and responds to human activity.
+<p>To analyze data, one first needs to collect data. The primary source of weather data in the US comes from hundreds of weather stations
+spread out across
+<br>each state. To meaningfully analyze climate trends, it is of upmost importance to be able to locate weather stations geographically
+so that data may be meaningfully 
+<br>collected and cross examined. </p>
+
+<p>This page allows for visualization of the weather stations in sample states.</p>
+<p style="font-size: 23px"><b>Weather Stations by State (NY, CA, IL)</b></p>
+
+<p style="font-size: 20px">New York</p>
+<img src="{{url_for('static', filename='ny_stations.png', width= 350)}}">
+<img src="{{url_for('static', filename='ny_google_earth.png', height= 350)}}">
+<figcaption style="margin-left: 2px; font-size: 14.0px">Weather stations in NY by latitude, longitude. Compared with a map of New York
+from Google Earth so landmarks may be easily recognized.</figcaption>
+
+<p style="font-size: 20px">California</p>
+<img src="{{url_for('static', filename='ca_stations.png', width= 350)}}">
+<img src="{{url_for('static', filename='ca_google_earth.png', height= 400)}}">
+<figcaption style="margin-left: 2px; font-size: 14.0px">Weather stations in CA by latitude, longitude. Compared with a map of New York
+from Google Earth so landmarks may be easily recognized.</figcaption>
+
+<p style="font-size: 20px">Illinois</p>
+<img src="{{url_for('static', filename='il_stations.png', width= 350)}}">
+<img src="{{url_for('static', filename='il_google_earth.png', height= 400)}}">
+<figcaption style="margin-left: 2px; font-size: 14.0px">Weather stations in IL by latitude, longitude. Compared with a map of New York
+from Google Earth so landmarks may be easily recognized.</figcaption>
+
+<p>Using this visual data, a scientist can now more easily choose weather stations relating particular climates (which is of particular important
+in CA due to its diverse geographic climate). It 
+<br>is also now easier to see if weather stations are clustered, which would allow for
+data comparison to increase local accuracy.</p>
+<p>In the future I hope to expand this code so that data from weather stations can more easily be organized by sub-state and climate based regions
+to improve in ease of analysis. I've already 
+<br>began coding regional sorting and temperaterature retrival functions (present in functions code) which I plan to expand
+to categories such as cloud cover and precipitation amount. I am hoping this data may show 
+<br>interesting trends
+for recent months relating to the decrease of manufacturing and domestic travel due to COVID-19.</p>
+<p style="font-size: 12px">Sources: NOAA,https://www.noaa.gov/; Google Earth, https://earth.google.com/</p>
+
 </body>
 <html>
