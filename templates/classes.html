@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Classes</title>
+</head>
+
+<body>
+<p style="font-size: 20px">My Classes: Spring 2020</p>
+
+{% for table in tables %}
+            {{ table|safe }}
+{% endfor %}
+<p style="font-size: 18px"><b>My favorite class this semester:</b></p>
+<p style="margin-left: 15px; font-size: 16px">My favorite class this semester was Fourier Analysis which was an indepth
+and rigorous study of the theory behind Fourier Series and Fourier Transformations. The subject of Fourier Transforms
+<br>and Fourier Series in itself is extremely interesting, but this course also acted as a synthesis of many math subjects
+such as complex analysis, functional analysis, and group theory, as well as many 
+<br>physical topics, such as heat transfer, wave mechanics, and the schrodinger equation, at the same time. It was a whirlwind trip
+through many fundamental workings of the world around us and 
+<br>I hope to find more classes like this during the rest of my time at Columbia.
+</p>
+</body>
+</html>
